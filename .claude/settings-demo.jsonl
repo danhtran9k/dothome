@@ -1,0 +1,115 @@
+// CLAUDE oririnal
+// "model": "sonnet[1m]", // change too often
+// longcat should disable all plugins by default, not commpetible
+// glm is ok
+{
+  // =========================================================
+  // delete this group
+  "model": "sonnet[1m]",
+  "env-longcat": {
+    "ANTHROPIC_AUTH_TOKEN": "API_KEY_HERE",
+    "ANTHROPIC_BASE_URL": "https://api.longcat.chat/anthropic",
+    // "ANTHROPIC_BASE_URL": "https://api.z.ai/api/anthropic",
+    "ANTHROPIC_MODEL": "LongCat-Flash-Chat",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "LongCat-Flash-Thinking-2601",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "LongCat-Flash-Chat",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "LongCat-Flash-Lite",
+    "ANTHROPIC_SMALL_FAST_MODEL": "LongCat-Flash-Lite"
+  },
+
+  "env-glm": {
+    "ANTHROPIC_AUTH_TOKEN": "API_KEY_HERE",
+    "ANTHROPIC_BASE_URL": "https://api.z.ai/api/anthropic",
+    "ANTHROPIC_MODEL": "GLM-4.7",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "GLM-5.1",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "GLM-4.7",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "GLM-4.5-Air",
+    "ANTHROPIC_SMALL_FAST_MODEL": "GLM-4.5-Air",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "GLM-4.7"
+  },
+
+  // https://pro-x.io.vn/dashboard/ -> tab Claude
+  "env-prox": {
+    "ANTHROPIC_AUTH_TOKEN": "sk-SOMETHING",
+    "ANTHROPIC_BASE_URL": "https://pro-x.io.vn/",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-opus-4-6",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-sonnet-4-6",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "claude-haiku-4-5-20251001",
+    "CLAUDE_CODE_SUBAGENT_MODEL": "claude-sonnet-4-6",
+    "CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS": "0"
+  },
+  // 9router auto switch thay thế tạm, xài chơi vui
+  "env-devgo": {
+    "ANTHROPIC_AUTH_TOKEN": "sk-3b33cfc262a93b47-qy7poa-af399075",
+    "ANTHROPIC_BASE_URL": "https://9router.tools.devgovietnam.io.vn/v2",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "DevGOVietnam-Frontier",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "DevGOVietnam-Elite",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "DevGOVietnam-Core",
+  },
+  // be CAREFUL cause default CLAUDE MODEL may leak to this one
+  "env-openrouter": {
+    "ANTHROPIC_API_KEY": "",
+    "OPENROUTER_API_KEY": "OP_KEY",
+    "ANTHROPIC_AUTH_TOKEN": "OP_KEY",
+    "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
+  },
+  // delete this group
+  // =========================================================
+  
+  // this should be merge with specific env
+  // MERGE ENV HERE
+  // CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1 
+  // breaks plugin marketplace UI — even if data is cached locally,
+  // the /plugin UI silently fails to render. Remove it from env to use plugins.
+  "env": {
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1,
+    "maxOutputTokens": 50000,
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "6000",
+  },
+
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": false,
+    "claude-code-setup@claude-plugins-official": false,
+    "skill-creator@claude-plugins-official": false,
+    "playground@claude-plugins-official": false,
+    "hookify@claude-plugins-official": false
+  },
+
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/translate_prompt.py"
+          }
+        ]
+      }
+    ]
+  },
+
+  "permissions": {
+    "allow": [
+      "Bash(wc *)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(sudo *)"
+    ],
+    "defaultMode": "default"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/myScript/statusline.sh"
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "playground@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true,
+  "plansDirectory": "./plans",
+  "skipDangerousModePermissionPrompt": true
+}

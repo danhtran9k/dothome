@@ -1,0 +1,33 @@
+{
+  "session_id": "33eb46bf-4281-487e-8b28-07fa58dbbb5c",
+  "transcript_path": "/Users/danhtran/.claude/projects/-Users-danhtran--claude/33eb46bf-4281-487e-8b28-07fa58dbbb5c.jsonl",
+  "cwd": "/Users/danhtran/.claude",
+  "model": {
+    "id": "claude-sonnet-4-5-20250929",
+    "display_name": "Sonnet 4.5"
+  },
+  "workspace": {
+    "current_dir": "/Users/danhtran/.claude",
+    "project_dir": "/Users/danhtran/.claude"
+  },
+  "version": "2.1.37",
+  "output_style": {
+    "name": "default"
+  },
+  "cost": {
+    "total_cost_usd": 0,
+    "total_duration_ms": 1342,
+    "total_api_duration_ms": 0,
+    "total_lines_added": 0,
+    "total_lines_removed": 0
+  },
+  "context_window": {
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "context_window_size": 200000,
+    "current_usage": null,
+    "used_percentage": null,
+    "remaining_percentage": null
+  },
+  "exceeds_200k_tokens": false
+}

@@ -1,0 +1,130 @@
+// correct format is json
+// path : '~/.config/ccstatusline/settings.json'
+{
+  "version": 3,
+  "lines": [
+    [
+      {
+        "id": "e12382e4-993c-4004-8356-aeafec813e51",
+        "type": "current-working-dir",
+        "color": "brightWhite"
+      },
+      {
+        "id": "0430da5e-0f05-40a7-ac43-03751784f2a2",
+        "type": "separator"
+      },
+      {
+        "id": "8ca355a5-c345-4273-85b8-f2e1d0e78af3",
+        "type": "git-branch"
+      },
+      {
+        "id": "07ed42a9-5828-4aa9-96b6-04358ef4ca89",
+        "type": "separator"
+      },
+      {
+        "id": "213a03f3-9411-4f19-80c3-e4974c7d7515",
+        "type": "git-changes"
+      },
+      {
+        "id": "c8547837-0d5e-401f-a493-7fd96f455c76",
+        "type": "separator"
+      },
+      {
+        "id": "188dc32b-d41c-47f2-84fb-0dbddc97b303",
+        "type": "session-name"
+      },
+      {
+        "id": "a1fa2f70-326a-4114-b0a5-abaa50ef2e19",
+        "type": "separator"
+      },
+      {
+        "id": "41adfd3b-8cb2-408b-a33d-b9bc2ea61e34",
+        "type": "model"
+      }
+    ],
+    [
+      {
+        "id": "14a72bf3-e200-4228-a8dd-18badce9eeb2",
+        "type": "reset-timer",
+        "color": "yellow"
+      },
+      {
+        "id": "b2897748-7a72-4249-885d-4f4e7a9df8af",
+        "type": "separator"
+      },
+      {
+        "id": "f8879623-fabe-4f2d-b9a2-26d76b413fd6",
+        "type": "session-usage",
+        "color": "brightBlue"
+      },
+      {
+        "id": "b3de153c-93f7-476d-a355-e1822257e2f3",
+        "type": "separator"
+      },
+      {
+        "id": "00ffc7cd-f58d-442a-80d9-67e2c263d2b2",
+        "type": "context-length",
+        "color": "brightCyan"
+      },
+      {
+        "id": "4a1210e3-0f55-44bb-8a20-644b034a656a",
+        "type": "separator"
+      },
+      {
+        "id": "ce716b12-d6ba-4ab7-bcd2-1b204e507ae9",
+        "type": "weekly-usage",
+        "color": "brightBlack"
+      }
+    ],
+    [
+      {
+        "id": "0abfdc10-825d-4787-b875-669fb4bceb67",
+        "type": "context-percentage",
+        "color": ""
+      },
+      {
+        "id": "4e4397dd-99a1-4dd2-943a-48dafa963eb9",
+        "type": "separator"
+      },
+      {
+        "id": "64df164e-c38b-48b7-a5df-7e99f39df323",
+        "type": "tokens-total",
+        "color": "brightBlack"
+      },
+      {
+        "id": "8a14a998-9f6b-4ee8-9d51-f8ba8a286484",
+        "type": "separator"
+      },
+      {
+        "id": "9947fbe3-3720-435d-94b4-eee7e945bf0b",
+        "type": "session-cost",
+        "color": "brightMagenta"
+      },
+      {
+        "id": "97505a38-4cb8-4695-9060-81373074d230",
+        "type": "separator"
+      },
+      {
+        "id": "1d19c261-b64f-47ae-8997-e2f8817b2a00",
+        "type": "skills"
+      }
+    ]
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "powerline": {
+    "enabled": false,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [],
+    "endCaps": [],
+    "autoAlign": false
+  }
+}

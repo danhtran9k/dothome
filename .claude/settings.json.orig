@@ -1,0 +1,43 @@
+{
+  "env": {
+    "API_TIMEOUT_MS": "300000"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(wc *)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(sudo *)"
+    ],
+    "defaultMode": "default"
+  },
+  "model": "opus",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/translate_prompt.py"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/myScript/statusline.sh"
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": false,
+    "playground@claude-plugins-official": true,
+    "hookify@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true,
+  "plansDirectory": "./plans",
+  "skipDangerousModePermissionPrompt": true,
+  "effortLevel": "high"
+}

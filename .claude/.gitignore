@@ -1,0 +1,40 @@
+__pycache__/
+*.dump.*
+*.log.*
+
+env.*
+settings.json
+#use settings-demo.json
+.credentials.json
+# window creaentials
+
+telemetry/*
+
+debug/*
+debug.txt
+debug.md
+session_info.txt
+session_info.md
+history.jsonl
+stats-cache.json
+
+sessions/*
+backups/*
+cache/*
+file-history/*
+paste-cache/*
+todos/*
+statsig/*
+shell-snapshots/*
+tasks/*
+projects/*
+usage-data/facets/*
+usage-data/session-meta/*
+usage-data/report.html
+
+# due to path different between windows and unix, 
+plugins/*
+install-counts-cache.json
+
+mcp-needs-auth-cache.json
+env.*
