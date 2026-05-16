@@ -2,8 +2,10 @@ __pycache__/
 *.dump.*
 *.log.*
 
+*.env
 env.*
-
+*.env.*
+node_modules
 # ==========================
 # For .claude
 .claude/settings.json
@@ -41,3 +43,5 @@ env.*
 .claude/mcp-needs-auth-cache.json
 
 # ==========================
+# For opencode
+.config/opencode/plugin/*
