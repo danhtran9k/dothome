@@ -1,0 +1,43 @@
+__pycache__/
+*.dump.*
+*.log.*
+
+env.*
+
+# ==========================
+# For .claude
+.claude/settings.json
+#use settings-demo.json
+.claude/credentials.json
+# window creaentials
+
+.claude/telemetry/*
+
+.claude/debug/*
+.claude/debug.txt
+.claude/debug.md
+.claude/session_info.txt
+.claude/session_info.md
+.claude/history.jsonl
+.claude/stats-cache.json
+
+.claude/sessions/*
+.claude/backups/*
+.claude/cache/*
+.claude/file-history/*
+.claude/paste-cache/*
+.claude/todos/*
+.claude/statsig/*
+.claude/shell-snapshots/*
+.claude/tasks/*
+.claude/projects/*
+.claude/usage-data/facets/*
+.claude/usage-data/session-meta/*
+.claude/usage-data/report.html
+
+# due to path different between windows and unix, 
+.claude/plugins/*
+.claude/install-counts-cache.json
+.claude/mcp-needs-auth-cache.json
+
+# ==========================
