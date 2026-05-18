@@ -1,14 +1,12 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": [
-    "opencode-gemini-auth@latest"
-  ],
+  "plugin": ["opencode-gemini-auth@latest"],
   "provider": {
     "google": {
       "options": {
         "projectId": "gen-lang-client-0826591889"
       },
-      "models": {
+	  "models": {
         "gemini-2.5-flash": {
           "options": {
             "thinkingConfig": {
@@ -43,7 +41,7 @@
         }
       }
     },
-    "devgo": {
+	"devgo": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "DevGo-9Router",
       "options": {
@@ -70,33 +68,6 @@
         }
       }
     },
-    "omniroute": {
-      "name": "OmniRoute",
-      "options": {
-        "baseURL": "http://localhost:20128/v1",
-        "apiKey": "{env:KEY_OMNI_ROUTER}"
-      },
-      "models": {
-        "gemma-4-31b-it": {
-          "name": "Gemma 4 31B IT"
-        },
-        "gpt-oss-120b": {
-          "name": "GPT OSS 120B"
-        },
-        "gpt-oss-20b": {
-          "name": "GPT OSS 20B"
-        },
-        "minimax-m2.5": {
-          "name": "MiniMax M2.5"
-        },
-        "nemotron-3-nano-30b": {
-          "name": "Nemotron 3 Nano 30B"
-        },
-        "gemma-3-4b-it": {
-          "name": "Gemma 3 4B IT"
-        }
-      }
-    },
     "agentrouter": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "AgentRouter",
@@ -113,51 +84,6 @@
         },
         "deepseek-chat": {
           "name": "DeepSeek V3"
-        }
-      }
-    },
-    "9router": {
-      "npm": "@ai-sdk/openai-compatible",
-      "options": {
-        "baseURL": "http://127.0.0.1:20128/v1",
-        "apiKey": "{file:./9router.env}"
-      },
-      "models": {
-        "openrouter/minimax/minimax-m2.5:free": {
-          "name": "openrouter/minimax/minimax-m2.5:free",
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "glm/glm-5.1": {
-          "name": "glm/glm-5.1",
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "xmtp/mimo-v2.5-pro": {
-          "name": "xmtp/mimo-v2.5-pro",
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          }
         }
       }
     }
