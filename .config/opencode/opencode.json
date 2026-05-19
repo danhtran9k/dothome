@@ -77,23 +77,80 @@
         "apiKey": "{env:KEY_OMNI_ROUTER}"
       },
       "models": {
-        "gemma-4-31b-it": {
-          "name": "Gemma 4 31B IT"
+        "mimo/mimo-v2.5-pro": {
+          "name": "mimo/mimo-v2.5-pro"
         },
-        "gpt-oss-120b": {
-          "name": "GPT OSS 120B"
+		"mimo/mimo-v2.5": {
+          "name": "mimo/mimo-v2.5"
         },
-        "gpt-oss-20b": {
-          "name": "GPT OSS 20B"
+        "glm/glm-5.1": {
+          "name": "glm/glm-5.1"
         },
-        "minimax-m2.5": {
-          "name": "MiniMax M2.5"
+        "openrouter/anthropic/claude-haiku-4.5": {
+          "name": "openrouter/anthropic/claude-haiku-4.5"
         },
-        "nemotron-3-nano-30b": {
-          "name": "Nemotron 3 Nano 30B"
+        "openrouter/anthropic/claude-sonnet-4.5": {
+          "name": "openrouter/anthropic/claude-sonnet-4.5"
         },
-        "gemma-3-4b-it": {
-          "name": "Gemma 3 4B IT"
+        "openrouter/google/gemini-2.5-pro-preview": {
+          "name": "openrouter/google/gemini-2.5-pro-preview"
+        },
+        "openrouter/google/gemini-3.1-flash-lite-preview": {
+          "name": "openrouter/google/gemini-3.1-flash-lite-preview"
+        },
+        "openrouter/openai/gpt-oss-20b": {
+          "name": "openrouter/openai/gpt-oss-20b"
+        },
+        "openrouter/openai/gpt-oss-120b": {
+          "name": "openrouter/openai/gpt-oss-120b"
+        },
+        "openrouter/openai/gpt-5.5-pro": {
+          "name": "openrouter/openai/gpt-5.5-pro"
+        },
+        "openrouter/openai/gpt-5.4-mini": {
+          "name": "openrouter/openai/gpt-5.4-mini"
+        },
+        "agentrouter/claude-haiku-4-5-20251001": {
+          "name": "agentrouter/claude-haiku-4-5-20251001"
+        },
+        "agentrouter/claude-opus-4-6": {
+          "name": "agentrouter/claude-opus-4-6"
+        },
+        "agentrouter/deepseek-v3.2": {
+          "name": "agentrouter/deepseek-v3.2"
+        },
+        "agentrouter/glm-5.1": {
+          "name": "agentrouter/glm-5.1"
+        },
+        "openrouter/deepseek/deepseek-v4-pro": {
+          "name": "openrouter/deepseek/deepseek-v4-pro"
+        },
+        "openrouter/google/gemma-3-4b-it": {
+          "name": "openrouter/google/gemma-3-4b-it"
+        },
+        "openrouter/google/gemma-3-12b-it": {
+          "name": "openrouter/google/gemma-3-12b-it"
+        },
+        "openrouter/z-ai/glm-4.5-air:free": {
+          "name": "free:openrouter/z-ai/glm-4.5-air"
+        },
+        "openrouter/deepseek/deepseek-v4-flash:free": {
+          "name": "free:openrouter/deepseek/deepseek-v4-flash"
+        },
+        "openrouter/nvidia/nemotron-3-nano-30b-a3b:free": {
+          "name": "free:openrouter/nvidia/nemotron-3-nano-30b-a3b"
+        },
+        "openrouter/minimax/minimax-m2.5:free": {
+          "name": "free:openrouter/minimax/minimax-m2.5"
+        },
+        "openrouter/google/gemma-4-31b-it:free": {
+          "name": "free:openrouter/google/gemma-4-31b-it"
+        },
+        "openrouter/openai/gpt-oss-20b:free": {
+          "name": "free:openrouter/openai/gpt-oss-20b"
+        },
+        "openrouter/openai/gpt-oss-120b:free": {
+          "name": "free:openrouter/openai/gpt-oss-120b"
         }
       }
     },
@@ -119,8 +176,8 @@
     "9router": {
       "npm": "@ai-sdk/openai-compatible",
       "options": {
-        "baseURL": "http://127.0.0.1:20128/v1",
-        "apiKey": "{file:./9router.env}"
+        "baseURL": "http://127.0.0.1:20129/v1",
+        "apiKey": "{file:./tmp_patch/9router.env}"
       },
       "models": {
         "openrouter/minimax/minimax-m2.5:free": {

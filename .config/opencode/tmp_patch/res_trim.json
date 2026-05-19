@@ -1,0 +1,102 @@
+{
+  "error": [
+    {
+      "model": "glm/glm-5.1",
+      "provider": "glm"
+    },
+    {
+      "model": "openrouter/google/gemini-2.5-pro-preview",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/openai/gpt-oss-120b",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/openai/gpt-5.5-pro",
+      "provider": "openrouter"
+    },
+    {
+      "model": "agentrouter/claude-haiku-4-5-20251001",
+      "provider": "agentrouter"
+    },
+    {
+      "model": "agentrouter/claude-opus-4-6",
+      "provider": "agentrouter"
+    },
+    {
+      "model": "agentrouter/deepseek-v3.2",
+      "provider": "agentrouter"
+    },
+    {
+      "model": "agentrouter/glm-5.1",
+      "provider": "agentrouter"
+    },
+    {
+      "model": "openrouter/z-ai/glm-4.5-air:free",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/deepseek/deepseek-v4-flash:free",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/deepseek/deepseek-v4-pro",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/nvidia/nemotron-3-nano-30b-a3b:free",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/minimax/minimax-m2.5:free",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/google/gemma-4-31b-it:free",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/google/gemma-3-4b-it",
+      "provider": "openrouter"
+    }
+  ],
+  "ok": [
+    {
+      "model": "xiaomi-mimo/mimo-v2-omni",
+      "provider": "xiaomi-mimo"
+    },
+    {
+      "model": "openrouter/anthropic/claude-haiku-4.5",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/anthropic/claude-sonnet-4.5",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/google/gemini-3.1-flash-lite-preview",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/openai/gpt-oss-20b",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/openai/gpt-5.4-mini",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/openai/gpt-oss-20b:free",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/openai/gpt-oss-120b:free",
+      "provider": "openrouter"
+    },
+    {
+      "model": "openrouter/google/gemma-3-12b-it",
+      "provider": "openrouter"
+    }
+  ]
+}
